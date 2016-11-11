@@ -1,0 +1,22 @@
+SETTINGS_CONFIGURATION_FILE = "config/settings.ini"
+SETTINGS = "settings"
+INPUT = "input"
+OUTPUT = "output"
+HEADER = "header"
+FOOTER = "footer"
+LOGO = "logo"
+ORIENTATION = "orientation"
+SERVER = 'server'
+USERNAME = 'username'
+PASSWORD = 'password'
+LOGIN = 'login'
+SITE = 'site'
+MODE = 'mode'
+LOCAL = 'local'
+WORKBOOK = 'workbook'
+VIEW = 'view'
+FILE = 'file'
+LANDSCAPE = 'landscape'
+PORTRAIT = 'portrait'
+
+temp_filepath = "C:/TEMP/"
