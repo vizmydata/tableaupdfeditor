@@ -11,33 +11,33 @@ This makes use of:
 
 The configuration is done through a file called setting.ini which has this format:
 
-[settings]
-mode = local/server
-orientation = landscape/portrait
-output = pdf/prova.pdf
-logo = logo/tableau.png
-header = PDF editing sample
+[settings]<br/>
+mode = local/server<br/>
+orientation = landscape/portrait<br/>
+output = pdf/prova.pdf<br/>
+logo = logo/tableau.png<br/>
+header = PDF editing sample<br/>
 footer =
 
 Mode tells the script if the pdf we want to edit is in local or we have to generate it from Tableau Server.
 Logo, header and footer are the customisations we are going to make on the pdf.
 If footer is left blank a page counter will be displayed.
 
-[local]
+[local]<br/>
 file = pdf/sample_portrait.pdf
 
 Where to get the file in case of mode = local
 
-[login]
-server = http://tableau-demo.ecohmedia.com
-username =
-password =
+[login]<br/>
+server = <br/>
+username =<br/>
+password =<br/>
 site =
 
 Credentials for loggin in to Tableau Server in case of mode = server
 
-[server]
-workbook = Coffee
+[server]<br/>
+workbook = Coffee<br/>
 view = Sheet1
 
 The view of the workbook from which we want to generate the pdf report in case of mode = server
