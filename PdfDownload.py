@@ -1,7 +1,7 @@
 import tableauserverclient as tsc
 import requests
 import configparser
-from constants import *
+from Constants import *
 
 
 def download(workbook, view):

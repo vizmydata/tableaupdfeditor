@@ -5,8 +5,8 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4, letter
 from reportlab.lib.styles import getSampleStyleSheet
 import configparser
-import download_pdf
-from constants import *
+import PdfDownload
+from Constants import *
 from tableauserverclient.server.endpoint.exceptions import ServerResponseError
 
 
@@ -93,7 +93,7 @@ def main():
         try:
             workbook = config.get(SERVER, WORKBOOK)
             view = config.get(SERVER, VIEW)
-            download_pdf.download(workbook, view)
+            PdfDownload.download(workbook, view)
         except configparser.NoOptionError as e:
             print(str(e) + ". Check configuration in settings.ini")
             return -1
